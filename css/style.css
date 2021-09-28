@@ -17,3 +17,24 @@
   url("../fonts/PTSans-Bold.woff2") format("woff2"),
   url("../fonts/PTSans-Bold.woff") format("woff");
 }
+
+/* Color Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-brown: #766357;
+  --basic-blue: #81B3D2;
+  --basic-white: #FFFFFF;
+
+	--black-light: #231F20;
+	--brown-darken: #503E33;
+	--brown-dark: #604E43;
+	--blue-darken: #5496BD;
+	--blue-dark: #669EC0;
+	--gray-light: #BDBBBC;
+
+	--black-rgb: 0, 0, 0;
+  --black-light-rgb: 0, 1, 1;
+	--gray-rgb: 171, 171, 171;
+	--white-rgb: 255, 255, 255;
+}
