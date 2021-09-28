@@ -25,18 +25,18 @@
   --basic-brown: #766357;
   --basic-blue: #81B3D2;
   --basic-white: #FFFFFF;
-
-	--black-light: #231F20;
-	--brown-darken: #503E33;
-	--brown-dark: #604E43;
-	--blue-darken: #5496BD;
-	--blue-dark: #669EC0;
-	--gray-light: #BDBBBC;
-
-	--black-rgb: 0, 0, 0;
+  --black-light: #231F20;
+  --brown-darken: #503E33;
+  --brown-dark: #604E43;
+  --brown-light: #847870;
+  --blue-darken: #5496BD;
+  --blue-dark: #669EC0;
+  --blue-light: #87B5D1;
+  --gray-light: #BDBBBC;
+  --black-rgb: 0, 0, 0;
   --black-light-rgb: 0, 1, 1;
-	--gray-rgb: 171, 171, 171;
-	--white-rgb: 255, 255, 255;
+  --gray-rgb: 171, 171, 171;
+  --white-rgb: 255, 255, 255;
 }
 
 /* Global Parameters */
@@ -120,6 +120,26 @@ img {
   line-height: inherit;
 }
 
+/* Header. Menu - Colors */
+
+.header--menu--list a:not(.active) {
+  color: var(--basic-black);
+}
+
+.header--menu--list a:hover:not(.active),
+.header--menu--list a:focus:not(.active) {
+  color: var(--basic-blue);
+}
+
+.header--menu--list a:active:not(.active) {
+  color: rgba(var(--black-rgb), 0.3);
+  mix-blend-mode: normal;
+}
+
+.header--menu--list a.active {
+  color: var(--basic-brown);
+}
+
 /* Header. Site Title */
 
 .page--header h1 {
@@ -157,6 +177,31 @@ img {
   line-height: 21px;
 }
 
+/* Main. Features - Colors */
+
+.main--features h2,
+.main--features p {
+  color: rgba(var(--black-rgb), 0.8);
+}
+
+.main--features div:nth-of-type(1) h3,
+.main--features div:nth-of-type(5) h3,
+.main--features div:nth-of-type(1) p,
+.main--features div:nth-of-type(5) p {
+  color: var(--basic-white);
+}
+
+.main--features div:nth-of-type(1),
+.main--features div:nth-of-type(5) {
+  background-color: var(--basic-blue);
+}
+
+.main--features div:nth-of-type(6),
+.main--features div:nth-of-type(7),
+.main--features div:nth-of-type(8) {
+  background-color: rgba(var(--black-rgb), 0.065);
+}
+
 /* Main. Orders - Titles And Paragraphes */
 
 .main--orders h2 {
@@ -181,6 +226,25 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+}
+
+/* Main. Orders - Colors */
+
+.main--orders h3 {
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  cursor: pointer;
+}
+
+.main--orders h3:hover,
+.main--orders h3:focus {
+  background-color: var(--brown-dark);
+}
+
+.main--orders h3:active {
+  color: var(--brown-light);
+  mix-blend-mode: normal;
+  background-color: var(--brown-darken);
 }
 
 /* Main. Navigation Filters - Titles & Paragraphes */
@@ -210,9 +274,33 @@ img {
   line-height: inherit;
 }
 
+/* Main. Navigation Filters - Colors */
+
+.main--nav--filters a:not(.active) {
+  border-bottom: 1px dotted var(--basic-blue);
+  color: rgba(var(--black-rgb), 0.3);
+  mix-blend-mode: normal;
+}
+
+.main--nav--filters a:hover:not(.active),
+.main--nav--filters a:focus:not(.active) {
+  color: var(--basic-blue);
+  opacity: 1;
+}
+
+.main--nav--filters a:active:not(.active) {
+  border-bottom: none;
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.main--nav--filters a.active {
+  color: var(--basic-blue);
+}
+
 /* Main. Search Results - Titles & Paragraphes */
 
-.main--search--results h3 {
+.main--search--results h3 > a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -229,7 +317,7 @@ img {
   line-height: 21px;
 }
 
-.main--search--results a {
+.main--search--results div > a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -237,7 +325,66 @@ img {
   line-height: 21px;
 }
 
-/* Footer. Contacts - Paragraphes */
+/* Main. Search Results - Colors */
+
+.main--search--results h3 > a {
+  color: var(--basic-black);
+}
+
+.main--search--results h3 > a:hover,
+.main--search--results h3 > a:focus {
+  color: var(--basic-blue);
+}
+
+.main--search--results h3 > a:active {
+  color: rgba(var(--black-rgb), 0.3);
+  mix-blend-mode: normal;
+}
+
+.main--search--results div > a {
+  color: var(--basic-white);
+}
+
+.main--search--results div > a:first-of-type {
+  background-color: var(--basic-blue);
+}
+
+.main--search--results div > a:first-of-type:hover,
+.main--search--results div > a:first-of-type:focus {
+  background-color: var(--blue-dark);
+}
+
+.main--search--results div > a:first-of-type:active {
+  color: var(--blue-light);
+  mix-blend-mode: normal;
+  background-color: var(--blue-darken);
+}
+
+.main--search--results div > a:last-of-type {
+  background-color: var(--basic-brown);
+}
+
+.main--search--results div > a:last-of-type:hover,
+.main--search--results div > a:last-of-type:focus {
+  background-color: var(--brown-dark);
+}
+
+.main--search--results div > a:last-of-type:active {
+  color: var(--brown-light);
+  mix-blend-mode: normal;
+  background-color: var(--brown-darken);
+}
+
+.main--search--results div > p {
+  color: rgba(var(--black-rgb), 0.8);
+}
+
+.main--search--results div > span {
+  color: rgba(var(--black-rgb), 0.6);
+  background-color: rgba(var(--black-rgb), 0.05);
+}
+
+/* Footer. Contacts - Paragraphes, Colors */
 
 .footer--contacts p {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -253,6 +400,10 @@ img {
   font-weight: inherit;
   font-size: inherit;
   line-height: 46px;
+}
+
+.footer--contacts a {
+  color: var(--basic-black);
 }
 
 /* Footer. Designers - Paragraphes */
