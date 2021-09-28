@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Гостиницы в Седоне</title>
     <link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <!-- <div> container to center -->
-      <header>
+  <body class="page--body">
+    <div class="page--body__shadow container">
+      <header class="page--header">
         <nav>
-          <div>
+          <div class="header--logo">
             <a href="index.html"><img src="https://via.placeholder.com/138x70" alt=""></a>
           </div>
-          <ul>
+          <ul class="header--menu--list container">
             <li><a href="">Информация</a></li>
             <li><a href="">Фото и видео</a></li>
             <li><a href="">Карта штата</a></li>
@@ -21,10 +21,10 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <h1>Поиск гостиницы в Седоне</h1>
-        <section>
-          <h2>Форма фильтра по гостиницам</h2>
+      <main class="page--main">
+        <h1 class="visually--hidden">Поиск гостиницы в Седоне</h1>
+        <section class="main--search--filters">
+          <h2 class="visually--hidden">Форма фильтра по гостиницам</h2>
           <!-- <form> filter form
             <fieldset>
               <legend>Инфраструктура:</legend>
@@ -120,8 +120,8 @@
             <input>
           </form> -->
         </section>
-        <section>
-          <h2>Навигация по фильтру</h2>
+        <section class="main--nav--filters">
+          <h2 class="visually--hidden">Навигация по фильтру</h2>
           <p>Найдено: <span>3</span></p>
           <h3>Сортировка:</h3>
           <ul>
@@ -130,7 +130,7 @@
             <li><a href="">По рейтингу</a></li>
             <li>
               <a href="">
-                <span>По возрастанию</span>
+                <span class="visually--hidden">По возрастанию</span>
 
 
 
@@ -138,7 +138,7 @@
             </li>
             <li>
               <a href="">
-                <span>По убыванию</span>
+                <span class="visually--hidden">По убыванию</span>
 
 
 
@@ -146,22 +146,22 @@
             </li>
           </ul>
         </section>
-        <section>
-          <h2>Результаты поиска</h2>
+        <section class="main--search--results">
+          <h2 class="visually--hidden">Результаты поиска</h2>
           <div>
             <h3><a href="">Amara Resort & Spa</a></h3>
             <img src="https://via.placeholder.com/135x90" alt="">
-            <p><span>Категория (звёзд): <span>4</span></span></p>
+            <p><span class="visually--hidden">Категория (звёзд): <span>4</span></span></p>
             <span>Рейтинг: <span>8,5</span></span>
             <p>Гостиница</p>
-            <a href="">Подробнее</a>
+            <a href="" class="">Подробнее</a>
             <p>От 4000 Р.</p>
             <a href="">Забронировать</a>
           </div>
           <div>
             <h3><a href="">Desert Quail Inn</a></h3>
             <img src="https://via.placeholder.com/135x90" alt="">
-            <p><span>Категория (звёзд): <span>3</span></span></p>
+            <p><span class="visually--hidden">Категория (звёзд): <span>3</span></span></p>
             <span>Рейтинг: <span>8,9</span></span>
             <p>Мотель</p>
             <a href="">Подробнее</a>
@@ -171,7 +171,7 @@
           <div>
             <h3><a href="">Villas at Poco Diablo</a></h3>
             <img src="https://via.placeholder.com/135x90" alt="">
-            <p><span>Категория (звёзд): <span>2</span></span></p>
+            <p><span class="visually--hidden">Категория (звёзд): <span>2</span></span></p>
             <span>Рейтинг: <span>9,2</span></span>
             <p>Апартаменты</p>
             <a href="">Подробнее</a>
@@ -180,18 +180,18 @@
           </div>
         </section>
       </main>
-      <footer>
-        <!-- <div> -->
-          <section>
-            <h2>Контакты</h2>
+      <footer class="page--footer">
+        <div class="page--footer__grid page--footer__position container">
+          <section class="footer--contacts">
+            <h2 class="visually--hidden">Контакты</h2>
             <p>#visitsedona<br><a href="tel:+74956660166">Тел: +7(495) 666-01-66</a></p>
           </section>
-          <section>
-            <h2>Соцсети</h2>
-            <ul>
+          <section class="footer--socials">
+            <h2 class="visually--hidden">Соцсети</h2>
+            <ul class="footer--social--list">
               <li>
                 <a href="">
-                  <span>Твитер</span>
+                  <span class="visually--hidden">Твитер</span>
                   <img src="https://via.placeholder.com/46x48" alt="">
 
 
@@ -199,7 +199,7 @@
               </li>
               <li>
                 <a href="">
-                  <span>Фейсбук</span>
+                  <span class="visually--hidden">Фейсбук</span>
                   <img src="https://via.placeholder.com/46x48" alt="">
 
 
@@ -207,7 +207,7 @@
               </li>
               <li>
                 <a href="">
-                  <span>Ютуб</span>
+                  <span class="visually--hidden">Ютуб</span>
                   <img src="https://via.placeholder.com/46x48" alt="">
 
 
@@ -215,20 +215,20 @@
               </li>
             </ul>
           </section>
-          <section>
-            <h2>Дизайн</h2>
+          <section class="footer--designers">
+            <h2 class="visually--hidden">Дизайн</h2>
             <p>Website by</p>
             <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <span>Логотип Академии</span>
+              <span class="visually--hidden">Логотип Академии</span>
               <img src="https://via.placeholder.com/115x41" alt="">
 
 
             </a>
-            <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
+            <p class="visually--hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
           </section>
-        <!-- </div> -->
+        </div>
       <footer>
-    <!-- </div> -->
+    </div>
     <!-- script -->
   </body>
 </html>
