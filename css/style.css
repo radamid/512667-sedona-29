@@ -79,3 +79,25 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page--body {
+	min-height: 100%;
+	background-color: rgba(var(--black-rgb), 0.05);
+}
+
+.page--body__shadow {
+	background-color: var(--basic-white);
+	box-shadow: 0 5px 15px 0 rgba(var(--black-light-rgb), 0.2);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
