@@ -339,6 +339,59 @@ img {
   background-color: var(--brown-darken);
 }
 
+/* Main. Navigation Filters - Flex */
+
+.main--nav--filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 86px;
+  padding: 0 73px;
+}
+
+.main--nav--filters h3 {
+  flex-basis: 115px;
+  height: 25px;
+  text-align: left;
+}
+
+.main--nav--filters ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main--nav--filters li:not(:last-child) {
+  padding-right: 33px;
+}
+
+.main--nav--filters li:nth-child(4),
+.main--nav--filters li:nth-child(5) {
+  align-self: flex-end;
+  min-width: 23px;
+  min-height: 25px;
+
+  outline: 5px solid red;
+}
+
+.main--nav--filters li:nth-child(4) {
+  flex-grow: 1;
+  padding-right: 12px;
+  text-align: right;
+
+  outline: 5px solid green;
+}
+
+.main--nav--filters p {
+  flex-basis: 163px;
+  text-align: left;
+}
+
 /* Main. Navigation Filters - Titles & Paragraphes */
 
 .main--nav--filters h3,
@@ -574,6 +627,25 @@ img {
   text-align: center;
 }
 
+/* Footer - Flex */
+
+.page--footer section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 120px;
+}
+
+.page--footer section:first-of-type {
+  padding-left: 73px;
+}
+
+.page--footer section:last-of-type {
+  padding-right: 73px;
+}
+
 /* Footer. Contacts - Paragraphes, Colors */
 
 .footer--contacts p {
@@ -596,6 +668,31 @@ img {
   color: var(--basic-black);
 }
 
+/* Footer. Socials - Flex */
+
+.footer--social--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer--social--list li {
+  width: 46px;
+  height: 48px;
+
+  outline: 6px solid gray;
+}
+
+.footer--social--list a {
+  font-size: 0;
+
+  outline: 6px solid blue;
+}
+
 /* Footer. Designers - Paragraphes */
 
 .footer--designers p {
@@ -604,4 +701,23 @@ img {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+}
+
+.footer--designers p {
+  padding-top: 3px;
+  margin-right: 8px;
+
+  outline: 3px solid green;
+}
+
+.footer--designers a {
+  height: 41px;
+  /* font-size: 0; */
+
+  outline: 5px solid blue;
+}
+
+.footer--designers img {
+
+  outline: 5px solid gray;
 }
