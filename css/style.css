@@ -102,6 +102,22 @@ img {
   padding: 0;
 }
 
+/* Header */
+
+.page--header {
+  position: relative;
+  text-align: center;
+}
+
+/* Header. Logo */
+
+.header--logo {
+  position: absolute;
+  margin-left: -69px;
+  left: 50%;
+  z-index: 1;
+}
+
 /* Header. Menu - Grid */
 
 .header--menu--list {
