@@ -829,20 +829,16 @@ img {
 }
 
 .footer--designers p {
-  padding-top: 3px;
   margin-right: 8px;
-
-  outline: 3px solid green;
 }
 
-.footer--designers a {
-  height: 41px;
-  /* font-size: 0; */
-
-  outline: 5px solid blue;
+.footer--designers a:hover path,
+.footer--designers a:focus path {
+  fill: var(--basic-blue);
+  fill-opacity: 1.0;
 }
 
-.footer--designers img {
-
-  outline: 5px solid gray;
+.footer--designers a:active path {
+  fill: var(--basic-black);
+  fill-opacity: 0.8;
 }
