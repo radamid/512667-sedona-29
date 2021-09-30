@@ -369,6 +369,27 @@ img {
   background-color: rgba(var(--black-rgb), 0.065);
 }
 
+/* Main. Orders */
+
+.main--orders {
+  position: relative;
+  text-align: center;
+}
+
+.main--orders h2 {
+  margin-top: 58px;
+}
+
+.main--orders h3 {
+  width: 568px;
+  padding: 30px 0;
+}
+
+.main--orders p {
+  margin-top: 33px;
+  margin-bottom: 42px;
+}
+
 /* Main. Orders - Titles And Paragraphes */
 
 .main--orders h2 {
