@@ -304,6 +304,26 @@ img {
   grid-column: 1 / 3;
 }
 
+/* Main. Features - Icons */
+
+.main--feature__accommodation {
+	background-image: url("../img/accommodation_icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 60px;
+}
+
+.main--feature__food {
+	background-image: url("../img/food_icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 61px;
+}
+
+.main--feature__gift {
+	background-image: url("../img/gift_icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 56px;
+}
+
 /* Main. Features - Titles & Paragraphes */
 
 .main--features h2 {
