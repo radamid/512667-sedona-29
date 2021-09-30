@@ -748,9 +748,11 @@ img {
 
 .page--footer section:first-of-type {
   padding-left: 73px;
+  padding-bottom: 3px;
 }
 
 .page--footer section:last-of-type {
+  padding-top: 3px;
   padding-right: 73px;
 }
 
@@ -769,7 +771,7 @@ img {
   font-style: inherit;
   font-weight: inherit;
   font-size: inherit;
-  line-height: 46px;
+  line-height: 44px;
 }
 
 .footer--contacts a {
