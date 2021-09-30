@@ -482,30 +482,45 @@ img {
   list-style: none;
 }
 
-.main--nav--filters li:not(:last-child) {
+.main--nav--filters li:not(.triangle) {
   padding-right: 33px;
 }
 
-.main--nav--filters li:nth-child(4),
-.main--nav--filters li:nth-child(5) {
-  align-self: flex-end;
+.main--nav--filters li.triangle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
   min-width: 23px;
   min-height: 25px;
-
-  outline: 5px solid red;
 }
 
-.main--nav--filters li:nth-child(4) {
+.main--nav--filters li.triangle:not(:last-child) {
   flex-grow: 1;
-  padding-right: 12px;
-  text-align: right;
-
-  outline: 5px solid green;
 }
 
 .main--nav--filters p {
   flex-basis: 163px;
   text-align: left;
+}
+
+/* Main. Navigation Filters - SVG */
+
+.triangle a:not(.active) path {
+  fill: var(--basic-black);
+	fill-opacity: 0.209;
+}
+
+.triangle a:hover:not(.active) path,
+.triangle a:focus:not(.active) path  {
+  fill: var(--basic-black);
+	fill-opacity: 1;
+}
+
+.triangle a:active:not(.active) path,
+.triangle a.active path  {
+  fill: var(--basic-blue);
+	fill-opacity: 1;
 }
 
 /* Main. Navigation Filters - Titles & Paragraphes */
@@ -537,7 +552,7 @@ img {
 
 /* Main. Navigation Filters - Colors */
 
-.main--nav--filters a:not(.active) {
+.main--nav--filters a:not(.active, .triangle a) {
   border-bottom: 1px dotted var(--basic-blue);
   color: rgba(var(--black-rgb), 0.3);
   mix-blend-mode: normal;
