@@ -609,9 +609,8 @@ img {
   grid-row: 1 / 2;
   height: 17px;
   margin-top: 29px;
+  margin-right: 71px;
   margin-bottom: 0;
-
-  outline: 5px solid blue;
 }
 
 .main--search--results div > p:nth-of-type(2) {
@@ -662,6 +661,40 @@ img {
   padding-left: 5px;
   text-align: center;
   box-sizing: border-box;
+}
+
+/* Main. Search Results - SVG */
+
+.category--stars {
+  background-image: url("../img/star_icon.svg");
+	background-repeat: repeat-x;
+	background-size: 24px 17px;
+	background-position: 0 0;
+}
+
+.category--stars__1 {
+  width: 19px;
+  margin-left: 94px;
+}
+
+.category--stars__2 {
+  width: 43px;
+  margin-left: 70px;
+}
+
+.category--stars__3 {
+  width: 67px;
+  margin-left: 46px;
+}
+
+.category--stars__4 {
+  width: 91px;
+  margin-left: 22px;
+}
+
+.category--stars__5 {
+  width: 115px;
+  margin-left: -2px;
 }
 
 /* Main. Search Results - Titles & Paragraphes */
