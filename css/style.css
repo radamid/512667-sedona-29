@@ -715,6 +715,18 @@ img {
   background-color: rgba(var(--black-rgb), 0.05);
 }
 
+/* Main. Map */
+
+.main--map {
+  width: 1200px;
+  height: 593px;
+  background-color: rgba(var(--black-rgb), 0.05);
+}
+
+.main--map a {
+  font-size: 0;
+}
+
 /* Footer - Grid */
 
 .page--footer__grid {
