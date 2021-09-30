@@ -188,6 +188,63 @@ img {
   color: var(--basic-brown);
 }
 
+/* Header. Welcome */
+
+.header--logo--welcome {
+  width: 1200px;
+  height: 509px;
+  top: 0;
+  text-align: center;
+  background-color: var(--basic-brown);
+  background:
+    url("../img/bg_mask.svg") no-repeat bottom,
+    url("../img/bg_photo.jpg");
+  background-repeat: no-repeat;
+}
+
+.header--logo--welcome img {
+  padding-top: 75px;
+}
+
+/* .header--logo--welcome__mask {
+  position: relative;
+}
+
+.header--logo--welcome__mask::before {
+  content: "";
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+  left: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(to top right, var(--basic-white) 49%, transparent 51%),
+    linear-gradient(to top left, var(--basic-white) 49%, transparent 51%);
+  background-position:
+    0 0,
+    600px 0;
+  background-repeat: no-repeat;
+  background-size: 600px 57px;
+}
+
+.header--logo--welcome__mask::after {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 57px;
+  margin-left: -350px;
+  left: 50%;
+  bottom: 0;
+  background-image:
+    linear-gradient(to top right, var(--basic-white) 49%, transparent 51%),
+    linear-gradient(to top left, var(--basic-white) 49%, transparent 51%);
+  background-position:
+    0 0,
+    350px 0;
+  background-repeat: no-repeat;
+  background-size: 350px 57px;
+} */
+
 /* Header. Site Title */
 
 .page--header h1 {
