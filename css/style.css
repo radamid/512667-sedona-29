@@ -727,6 +727,21 @@ img {
   font-size: 0;
 }
 
+/* Footer */
+
+.page--footer {
+  position: relative;
+}
+
+.page--footer__position {
+  position: absolute;
+  margin-left: -600px;
+  left: 50%;
+  bottom: 0;
+  background-color: var(--basic-white);
+  opacity: 0.9;
+}
+
 /* Footer - Grid */
 
 .page--footer__grid {
