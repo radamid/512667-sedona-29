@@ -455,6 +455,26 @@ img {
   background-color: var(--brown-darken);
 }
 
+/* Main. Search Filters - Legends, Labels & Inputs */
+
+.main--search--filters legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.main--search--filters label,
+.main--search--filters input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
 /* Main. Navigation Filters - Flex */
 
 .main--nav--filters {
