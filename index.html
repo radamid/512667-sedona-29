@@ -72,30 +72,30 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <h3 class="container">Поиск гостиницы в Седоне</h3>
-          <!-- <div> search form
-            <form>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="get">
               <fieldset>
-                <legend></legend>
+                <legend>Поиск гостиницы в Седоне</legend>
                 <ul>
                   <li>
-                    <label></label>
-                    <input>
+                    <label for="arrival_date">Дата заезда:</label>
+                    <input type="text" id="arrival_date" name="arrival_date" placeholder="24 апреля 2017">
 
 
 
 
                   </li>
                   <li>
-                    <label></label>
-                    <input>
+                    <label for="departure_date">Дата выезда:</label>
+                    <input type="text" id="departure_date" name="departure_date" placeholder="4 июля 2017">
 
 
 
 
                   </li>
                   <li>
-                    <label></label>
-                    <input>
+                    <label for="adult_amount">Взрослые:</label>
+                    <input type="text" id="adult_amount" name="adult_amount" value="2">
 
 
 
@@ -104,8 +104,8 @@
 
                   </li>
                   <li>
-                    <label></label>
-                    <input>
+                    <label for="child_amount">Дети:</label>
+                    <input type="text" id="child_amount" name="child_amount" value="0">
 
 
 
@@ -115,9 +115,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <input>
+              <input type="submit" value="Найти">
             </form>
-          </div> -->
+          </div>
         </section>
         <section class="main--map">
           <h2 class="visually--hidden">Как нас найти?</h2>
