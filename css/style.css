@@ -455,6 +455,30 @@ img {
   background-color: var(--brown-darken);
 }
 
+/* Main. Search Filters - Grid */
+
+.main--search--filters form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 327px 1fr 390px;
+  width: 1200px;
+  min-height: 217px;
+}
+
+.main--search--filters fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.main--search--filters fieldset:first-child {
+  padding-left: 73px;
+}
+
+.main--search--filters legend {
+  padding-top: 26px;
+}
+
 /* Main. Search Filters - SVG */
 
 .main--search--filters input[type="checkbox"] ~ svg path.checkbox-on_icon,
