@@ -25,36 +25,36 @@
         <h1 class="visually--hidden">Поиск гостиницы в Седоне</h1>
         <section class="main--search--filters">
           <h2 class="visually--hidden">Форма фильтра по гостиницам</h2>
-          <!-- <form> filter form
+          <form action="https://echo.htmlacademy.ru" method="">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul>
                 <li>
-                  <input>
+                  <input type="checkbox" name="basin" id="basin" checked>
 
 
 
 
 
-                  <label>Бассейн</label>
-                </li
-                <li>
-                  <input>
-
-
-
-
-
-                  <label>Парковка</label>
+                  <label for="basin">Бассейн</label>
                 </li>
                 <li>
-                  <input>
+                  <input type="checkbox" name="parking" id="parking">
 
 
 
 
 
-                  <label>Wi-Fi</label>
+                  <label for="parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wi-fi" id="wi-fi">
+
+
+
+
+
+                  <label for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -62,31 +62,31 @@
               <legend>Тип жилья:</legend>
               <ul>
                 <li>
-                  <input>
+                  <input type="checkbox" name="hotel" id="hotel" checked>
 
 
 
 
 
-                  <label>Гостиница</label>
-                </li
-                <li>
-                  <input>
-
-
-
-
-
-                  <label>Мотель</label>
+                  <label for="hotel">Гостиница</label>
                 </li>
                 <li>
-                  <input>
+                  <input type="checkbox" name="motel" id="motel" checked>
 
 
 
 
 
-                  <label>Апартаменты</label>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartment" id="apartment" checked>
+
+
+
+
+
+                  <label for="apartment">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -95,10 +95,10 @@
               <div>
                 <div>
                   <label>
-                    от <input>
+                    от <input type="number" name="min-price" value="0" autofocus>
                   </label>
                   <label>
-                    до <input>
+                    до <input type="number" name="max-price" value="3000">
                   </label>
                 </div>
                 <div>
@@ -117,8 +117,8 @@
                 </div>
               </div>
             </fieldset>
-            <input>
-          </form> -->
+            <input type="submit" value="Показать">
+          </form>
         </section>
         <section class="main--nav--filters">
           <h2 class="visually--hidden">Навигация по фильтру</h2>
