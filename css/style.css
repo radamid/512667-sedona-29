@@ -455,6 +455,42 @@ img {
   background-color: var(--brown-darken);
 }
 
+/* Main. Search Form */
+
+.search--form {
+  display: none;
+}
+
+.search--form__show {
+  display: block;
+}
+
+.search--form__position {
+  position: absolute;
+  margin-left: -284px;
+  left: 50%;
+  bottom: -395px;
+}
+
+.search--form form {
+  width: 568px;
+  height: 395px;
+  padding: 55px;
+  box-sizing: border-box;
+}
+
+.search--form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.search--form ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Main. Search Form - Labels & Inputs */
 
 .search--form label,
