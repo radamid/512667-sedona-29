@@ -541,6 +541,21 @@ img {
   color: rgba(var(--black-rgb), 0.585);
 }
 
+/* Main. Search Filters - Button */
+
+.main--search--filters input[type="submit"] {
+  position: absolute;
+  width: 137px;
+  height: 36px;
+  box-sizing: border-box;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  outline: none;
+  right: 168px;
+  bottom: 32px;
+  cursor: pointer;
+}
+
 /* Main. Search Filters - Legends, Labels & Inputs */
 
 .main--search--filters legend {
