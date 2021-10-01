@@ -30,7 +30,7 @@
               <legend>Инфраструктура:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" name="basin" id="basin" checked>
+                  <input class="visually--hidden" type="checkbox" name="basin" id="basin" checked>
 
 
 
@@ -39,7 +39,7 @@
                   <label for="basin">Бассейн</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="parking" id="parking">
+                  <input class="visually--hidden" type="checkbox" name="parking" id="parking">
 
 
 
@@ -48,7 +48,7 @@
                   <label for="parking">Парковка</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="wi-fi" id="wi-fi">
+                  <input class="visually--hidden" type="checkbox" name="wi-fi" id="wi-fi">
 
 
 
@@ -62,7 +62,7 @@
               <legend>Тип жилья:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <input class="visually--hidden" type="checkbox" name="hotel" id="hotel" checked>
 
 
 
@@ -71,7 +71,7 @@
                   <label for="hotel">Гостиница</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="motel" id="motel" checked>
+                  <input class="visually--hidden" type="checkbox" name="motel" id="motel" checked>
 
 
 
@@ -80,7 +80,7 @@
                   <label for="motel">Мотель</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="apartment" id="apartment" checked>
+                  <input class="visually--hidden" type="checkbox" name="apartment" id="apartment" checked>
 
 
 
@@ -92,26 +92,26 @@
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
-              <div>
-                <div>
-                  <label>
+              <div class="range--filter">
+                <div class="price--controls">
+                  <label class="min--price">
                     от <input type="number" name="min-price" value="0" autofocus>
                   </label>
-                  <label>
+                  <label class="max--price">
                     до <input type="number" name="max-price" value="3000">
                   </label>
                 </div>
-                <div>
-                  <div>
-                    <div>
+                <div class="range--controls">
+                  <div class="scale">
+                    <div class="bar">
 
 
                     </div>
                   </div>
-                  <div>
+                  <div class="toggle toggle--min">
 
                   </div>
-                  <div>
+                  <div class="toggle toggle--max">
 
                   </div>
                 </div>
