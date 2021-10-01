@@ -475,6 +475,32 @@ img {
   text-transform: uppercase;
 }
 
+/* Main. Search Filters - Colors */
+
+.main--search--filters {
+  background-color: var(--basic-brown);
+  background-image: url("../img/bg_diffused_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 217px;
+  background-position: 0 0;
+}
+
+.main--search--filters legend,
+.main--search--filters label,
+.main--search--filters input {
+  color: var(--basic-white);
+}
+
+.main--search--filters input {
+  background-color: inherit;
+}
+
+.main--search--filters input[type="submit"]:hover,
+.main--search--filters input[type="submit"]:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
 /* Main. Navigation Filters - Flex */
 
 .main--nav--filters {
