@@ -476,6 +476,60 @@ img {
   text-transform: uppercase;
 }
 
+/* Main. Search Form - Colors */
+
+.search--form {
+  background-color: var(--basic-white);
+  box-shadow: 0 7px 15px 0 rgba(var(--black-light-rgb), 0.15);
+}
+
+.search--form label,
+.search--form input[type="submit"] {
+  cursor: pointer;
+}
+
+.search--form label,
+.search--form input:not(input[type="submit"]) {
+  color: var(--basic-black);
+}
+
+.search--form input:not(input[type="submit"])::placeholder {
+  color: inherit;
+}
+
+.search--form input:not(input[type="submit"]) {
+  background-color: rgba(var(--black-rgb), 0.05);
+  outline: none;
+  border: 0;
+}
+
+.search--form input.item--date:hover {
+  background-color: rgba(var(--black-rgb), 0.08);
+}
+
+.search--form input.item--date:focus {
+  border: 2px solid rgba(var(--black-rgb), 0.102);
+  background-color: var(--basic-white);
+}
+
+.search--form input[type="submit"] {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  outline: none;
+  border: 0;
+}
+
+.search--form input[type="submit"]:hover,
+.search--form input[type="submit"]:focus {
+  background-color: var(--blue-dark);
+}
+
+.search--form input[type="submit"]:active {
+  color: rgba(var(--gray-rgb), 0.3);
+  mix-blend-mode: normal;
+  background-color: var(--blue-darken);
+}
+
 /* Main. Search Filters - Grid */
 
 .main--search--filters form {
