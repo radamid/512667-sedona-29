@@ -479,6 +479,29 @@ img {
   padding-top: 26px;
 }
 
+/* Main. Search Filters - Flex */
+
+.main--search--filters ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  list-style: none;
+}
+
+.main--search--filters li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 23px;
+}
+
+.main--search--filters label {
+  margin-left: 13px;
+  cursor: pointer;
+}
+
 /* Main. Search Filters - SVG */
 
 .main--search--filters input[type="checkbox"] ~ svg path.checkbox-on_icon,
