@@ -455,6 +455,68 @@ img {
   background-color: var(--brown-darken);
 }
 
+/* Main. Search Filters - SVG */
+
+.main--search--filters input[type="checkbox"] ~ svg path.checkbox-on_icon,
+.main--search--filters input[type="checkbox"]:checked ~ svg path.checkbox-off_icon {
+  fill: none;
+}
+
+.main--search--filters input[type="checkbox"] ~ svg path.checkbox-off_icon,
+.main--search--filters input[type="checkbox"]:checked ~ svg path.checkbox-on_icon {
+  fill: var(--basic-white);
+	fill-opacity: 1;
+}
+
+.main--search--filters input[type="checkbox"]:focus ~ svg path.checkbox-on_icon,
+.main--search--filters input[type="checkbox"]:checked:focus ~ svg path.checkbox-off_icon {
+  fill: none;
+}
+
+.main--search--filters input[type="checkbox"]:focus ~ svg path.checkbox-off_icon,
+.main--search--filters input[type="checkbox"]:checked:focus ~ svg path.checkbox-on_icon {
+  fill: var(--basic-blue);
+	fill-opacity: 1;
+}
+
+.main--search--filters input[type="checkbox"]:hover ~ svg path.checkbox-on_icon,
+.main--search--filters input[type="checkbox"]:checked:hover ~ svg path.checkbox-off_icon {
+  fill: none;
+}
+
+.main--search--filters input[type="checkbox"]:hover ~ svg path.checkbox-off_icon,
+.main--search--filters input[type="checkbox"]:checked:hover ~ svg path.checkbox-on_icon {
+  fill: var(--basic-white);
+	fill-opacity: 1;
+}
+
+.main--search--filters input[type="checkbox"]:active ~ svg path.checkbox-on_icon,
+.main--search--filters input[type="checkbox"]:checked:active ~ svg path.checkbox-off_icon {
+  fill: none;
+}
+
+.main--search--filters input[type="checkbox"]:active ~ svg path.checkbox-off_icon,
+.main--search--filters input[type="checkbox"]:checked:active ~ svg path.checkbox-on_icon {
+  fill: var(--basic-white);
+	fill-opacity: 1;
+}
+
+.main--search--filters input[type="checkbox"]:disabled ~ svg path.checkbox-on_icon,
+.main--search--filters input[type="checkbox"]:checked:disabled ~ svg path.checkbox-off_icon {
+  fill: none;
+}
+
+.main--search--filters input[type="checkbox"]:disabled ~ svg path.checkbox-off_icon,
+.main--search--filters input[type="checkbox"]:checked:disabled ~ svg path.checkbox-on_icon {
+  fill: var(--basic-black);
+	fill-opacity: 0.585;
+}
+
+.main--search--filters input[type="checkbox"]:disabled ~ label,
+.main--search--filters input[type="checkbox"]:checked:disabled ~ label {
+  color: rgba(var(--black-rgb), 0.585);
+}
+
 /* Main. Search Filters - Legends, Labels & Inputs */
 
 .main--search--filters legend {
