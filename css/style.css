@@ -458,7 +458,7 @@ img {
 /* Main. Search Form - Labels & Inputs */
 
 .search--form label,
-.search--form input {
+.search--form input:not(input[type="submit"]) {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
