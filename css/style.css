@@ -539,6 +539,53 @@ img {
   box-sizing: border-box;
 }
 
+.range--controls {
+  position: relative;
+  height: 41px;
+  padding-top: 20px;
+}
+
+.range--controls .scale {
+  height: 2px;
+  background: rgba(var(--gray-rgb), 0.3);
+  mix-blend-mode: normal;
+}
+
+.range--controls .bar {
+  width: 80%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range--controls .toggle {
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: rgba(var(--gray-rgb), 1.0);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(var(--gray-rgb), 0.3);
+  cursor: pointer;
+}
+
+.range--controls .toggle--min {
+  left: 0;
+}
+
+.range--controls .toggle--max {
+  left: 253px;
+}
+
+.range--controls .toggle:hover,
+.range--controls .toggle:focus {
+  top: 10px;
+  border: 9px solid var(--basic-white);
+  outline: none;
+}
+
 /* Main. Search Filters - SVG */
 
 .main--search--filters input[type="checkbox"] ~ svg path.checkbox-on_icon,
