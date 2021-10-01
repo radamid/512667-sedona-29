@@ -491,6 +491,65 @@ img {
   list-style: none;
 }
 
+/* Main. Search Form - Flex */
+
+.search--form ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.search--form li:nth-child(1) {
+  margin-bottom: 29px;
+}
+
+.search--form li:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.search--form li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search--form label {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.search--form label:not(li:last-child label) {
+  width: 112px;
+}
+
+.search--form li:last-child label {
+  width: 65px;
+}
+
+.search--form input {
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.search--form input.item--date {
+  width: 346px;
+  padding: 6px 13px;
+}
+
+.search--form input.item--adult,
+.search--form input.item--child {
+  width: 114px;
+  text-align: center;
+}
+
+.search--form input[type="submit"] {
+  width: 100%;
+  height: 58px;
+  margin-top: 54px;
+}
+
 /* Main. Search Form - Labels & Inputs */
 
 .search--form label,
