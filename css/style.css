@@ -118,6 +118,24 @@ img {
   z-index: 1;
 }
 
+.header--logo a {
+  position: relative;
+  outline: none;
+}
+
+.header--logo a:focus::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 9px;
+  bottom: 25px;
+  border-radius: 16px;
+  transform: rotate(45deg) skewX(3deg) skewY(3deg);
+  background-color: var(--basic-black);
+  z-index: -1;
+}
+
 /* Header. Menu - Grid */
 
 .header--menu--list {
@@ -166,6 +184,7 @@ img {
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
+  outline: none;
 }
 
 /* Header. Menu - Colors */
@@ -780,6 +799,7 @@ img {
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 .range--controls {
@@ -1045,6 +1065,7 @@ img {
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
+  outline: none;
 }
 
 /* Main. Navigation Filters - Colors */
@@ -1202,6 +1223,7 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  outline: none;
 }
 
 .main--search--results p,
@@ -1219,6 +1241,7 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
+  outline: none;
 }
 
 /* Main. Search Results - Colors */
@@ -1358,6 +1381,11 @@ img {
   color: var(--basic-black);
 }
 
+.footer--contacts a:focus {
+  color: var(--basic-blue);
+  outline: none;
+}
+
 /* Footer. Socials - Flex */
 
 .footer--social--list {
@@ -1384,6 +1412,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: inherit;
+  outline: none;
 }
 
 .footer--social--list a:hover,
@@ -1412,6 +1441,10 @@ img {
 
 .footer--designers p {
   margin-right: 8px;
+}
+
+.footer--designers a:focus {
+  outline: none;
 }
 
 .footer--designers a:hover path,
