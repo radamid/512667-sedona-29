@@ -550,6 +550,79 @@ img {
   margin-top: 54px;
 }
 
+/* Main. Search Form - SVG */
+
+.search--form input.item--date + svg {
+  position: absolute;
+  margin-right: 64px;
+  right: 0;
+  cursor: pointer;
+}
+
+.search--form input.item--date + svg path {
+  fill: var(--basic-black);
+  fill-opacity: 0.339;
+}
+
+.search--form input.item--date + svg:hover path,
+.search--form input.item--date + svg:focus path {
+  fill: var(--basic-black);
+  fill-opacity: 1;
+}
+
+.search--form input.item--date + svg:active path {
+  fill: var(--basic-blue);
+  fill-opacity: 1;
+}
+
+.search--form input.item--adult ~ svg {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.search--form input.item--adult + svg {
+  margin-left: 180px;
+}
+
+.search--form input.item--adult ~ svg:last-child {
+  margin-left: 256px;
+}
+
+.search--form input.item--child ~ svg {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.search--form input.item--child + svg {
+  margin-right: 143px;
+}
+
+.search--form input.item--child ~ svg:last-child {
+  margin-right: 68px;
+}
+
+.search--form input.item--adult ~ svg path,
+.search--form input.item--child ~ svg path {
+  fill: var(--basic-black);
+  fill-opacity: 0.339;
+}
+
+.search--form input.item--adult ~ svg:hover path,
+.search--form input.item--child ~ svg:hover path,
+.search--form input.item--adult ~ svg:focus path,
+.search--form input.item--child ~ svg:focus path {
+  fill: var(--basic-black);
+  fill-opacity: 1;
+}
+
+.search--form input.item--adult ~ svg:active path,
+.search--form input.item--child ~ svg:active path {
+  fill: var(--basic-blue);
+  fill-opacity: 1;
+}
+
 /* Main. Search Form - Labels & Inputs */
 
 .search--form label,
