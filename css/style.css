@@ -484,7 +484,8 @@ img {
 
 .main--orders .search--form__show {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .main--orders .search--form__position {
@@ -681,6 +682,10 @@ img {
 .main--orders .search--form label,
 .main--orders .search--form input:not(input[type="submit"]) {
   color: var(--basic-black);
+}
+
+.main--orders .search--form input:not(input[type="submit"])::-moz-placeholder {
+  color: inherit;
 }
 
 .main--orders .search--form input:not(input[type="submit"])::placeholder {
@@ -1100,7 +1105,8 @@ img {
 .main--search--results div {
   min-height: 150px;
   display: grid;
-  column-gap: 6px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
   grid-template-columns: 231px 110px 142px 1fr 184px;
   box-shadow: 0 1px 0 0 rgba(var(--black-rgb), 0.102);
 }
@@ -1462,6 +1468,17 @@ img {
 }
 
 /* Animations */
+
+@-webkit-keyframes bounce {
+  0% {
+    z-index: -1;
+    transform: translateY(-395px);
+  }
+  100% {
+    z-index: 0;
+    transform: translateY(0);
+  }
+}
 
 @keyframes bounce {
   0% {
